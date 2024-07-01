@@ -1,0 +1,122 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9e2d2; /* Pastel orange like beige */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #06305b; /* Dark blue */
+    color: white;
+    border: none;
+    cursor:
+  pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #5ba6f0; /* Darker shade of blue on hover */
+}
+
+section#userData {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-size: 1.1rem;
+}
+
+table td {
+    background-color: #fff;
+    font-size: 1.1rem;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    form,
+    .table-container {
+        max-width: 100%;
+    }
+}
+
